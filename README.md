@@ -1,0 +1,3 @@
+# COVID Prediction model based on precondition diseased mexican patients
+
+This repository contains an analysis of a [COVID-19 dataset from kaggle](https://www.kaggle.com/datasets/meirnizri/covid19-dataset). The dataset contains information about patients with COVID-19 and their preconditions. The goal of this analysis is to find out which preconditions are the most common among patients with COVID-19 and to build a model that predicts whether a patient is more likely to die or survive based on their preconditions and how impactful each precondition is.
