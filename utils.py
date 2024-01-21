@@ -17,3 +17,7 @@ def plot_pca_features(pca: skd.PCA, x: pd.DataFrame, features=None):
     for feature in features_indexes:
         plt.arrow(0, 0, coef[0, feature], coef[1, feature], color='r', alpha=0.5)
         plt.text(coef[0, feature]*1.15, coef[1, feature]*1.15, x.columns[feature], color='g', ha='center', va='center', fontsize=12)
+
+def plot_confusion_matrix_pie(c_matrix):
+    plt.pie(c_matrix.ravel(), labels=["True negative", "False positive", "False negative", "True positive"])
+    plt.show()
